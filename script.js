@@ -1,10 +1,10 @@
-var radius = 240; // how big of the radius
+var radius = 220; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -11; // unit: seconds/360 degrees
 var imgWidth = 120; // width of images (unit: px)
-var imgHeight = 200; // height of images (unit: px)
+var imgHeight = 180; // height of images (unit: px)
 function myinput() {
-    var name = prompt("what i calll you : ");
+    var name = prompt("what i call you : ");
     if (name == "sonam") {
 
 
