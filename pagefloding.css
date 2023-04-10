@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(18, 18, 31);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.w {
+    --w: 70vmin;
+    --h: 40vmin;
+    --img: url("https://github.com/Kamleshlodhi1119/Smily/blob/main/WhatsApp%20Image%202023-04-09%20at%2010.46.35%20AM.jpeg?raw=true");
+    display: grid;
+    width: calc(var(--w));
+    height: calc(var(--h));
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.a {
+    background-image: var(--img);
+    background-size: 150% 100%;
+    background-position: 100% center;
+    display: block;
+    width: calc(var(--w) /1.5);
+    height: var(--h);
+    transform-origin: center left;
+    transform-style: preserve-3d;
+    filter: grayscale(0);
+    margin: 0 calc(var(--w)* (1/3) /2);
+    animation: f 3s alternate infinite;
+}
+
+.a::before {
+    content: " ";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-image: var(--img);
+    background-size: 300% 100%;
+    background-position: 0 center, 0 center;
+    background-repeat: no-repeat;
+    transform-origin: bottom right;
+    transform: scale(-1, 1)translateX(100%)skewY(20deg);
+    animation: g 3s alternate infinite;
+}
+
+@keyframes f {
+    80%,
+    to {
+        background-size: 100% 100%;
+        background-position: 0 center;
+        transform: scale(1.5, 1);
+        filter: grayscale(0);
+        margin: 0 0;
+    }
+}
+
+@keyframes g {
+    80%,
+    to {
+        background-size: 300% 100%;
+        background-position: -50% center;
+        width: 0;
+    }
+}
