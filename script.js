@@ -9,7 +9,7 @@ function myinput() {
 
 
         // Link of background music - set 'null' if you dont want to play background music
-        var bgMusicURL = 'WhatsApp Audio 2023-04-13 at 7.33.52 PM.mpeg';
+        var bgMusicURL = 'https://raw.githubusercontent.com/Kamleshlodhi1119/Smily/main/marne%20ki%20baat.mp3';
         var bgMusicControls = true; // Show UI music control
 
 
