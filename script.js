@@ -9,8 +9,11 @@ function myinput() {
 
 
         // Link of background music - set 'null' if you dont want to play background music
-        var bgMusicURL = 'https://raw.githubusercontent.com/Kamleshlodhi1119/Smily/main/marne%20ki%20baat.mp3';
-        var bgMusicControls = true; // Show UI music control
+        // var bgMusicURL = 'https://raw.githubusercontent.com/Kamleshlodhi1119/Smily/main/marne%20ki%20baat.mp3';
+        // var bgMusicControls = true; // Show UI music control
+        var audio = document.getElementById("myAudio");
+        audio.autoplay = true;
+        audio.play();
 
 
 
