@@ -1,21 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <link rel="stylesheet" href="./pagefloding.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sachin</title>
+    <title>Kamleshlodhi1119</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aqua;
+            text-align: center;
+            background-image: url("https://github.com/Kamleshlodhi1119/Smily/blob/main/WhatsApp%20Image%202023-04-09%20at%2010.46.28%20AM%20(1).jpeg?raw=true");
+            background-size: 700px 1000px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        input[type=text] {
+            padding: 8px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        #nameDisplay {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #e20c0c;
+        }
+    </style>
 </head>
 
 <body>
+    <h2> ENETR THE NAME IN SMALL LETTER</h2>
+    <input type="text" id="nameInput">
+    <button onclick="displayName()" aria-placeholder="name">Name</button>
+    <div id="nameDisplay"></div>
 
-    <div class="w">
-        <a href="index1.html" target="_blank" class="a">
-        </a>
-    </div>
-
+    <script>
+        function displayName() {
+            var name = document.getElementById("nameInput").value;
+            document.getElementById("nameDisplay").innerHTML = "Hello " + name + " ! this page not for you \n         THANKS FOR VISIT     ";
+            document.getElementById("thanks for wisit");
+            if (name === "sonam") {
+                alert("Happy Birthday. Sachin🥳 🎊 You deserve the best. You are absolutely amazing! 🎈🎁🍾🥂 🌺🍹    click ok to visit next page")
+                window.location.href = "index0.html"; // replace "next_page.html" with the URL of the next page
+            }
+        }
+    </script>
 </body>
+
+</html>
 
 </html>
