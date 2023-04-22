@@ -1,8 +1,8 @@
 var radius = 220; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -10; // unit: seconds/360 degrees
-var imgWidth = 120; // width of images (unit: px)
-var imgHeight = 180; // height of images (unit: px)
+var imgWidth = 160; // width of images (unit: px)
+var imgHeight = 220; // height of images (unit: px)
 
 // Link of background music - set 'null' if you dont want to play background music
 // var bgMusicURL = 'https://raw.githubusercontent.com/Kamleshlodhi1119/Smily/main/marne%20ki%20baat.mp3';
@@ -74,7 +74,7 @@ if (bgMusicURL) {
 `;
 }
 
-// setup events
+
 document.onpointerdown = function(e) {
     clearInterval(odrag.timer);
     e = e || window.event;
