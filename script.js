@@ -1,7 +1,7 @@
 var radius = 220; // how big of the radius
 var autoRotate = true; // auto rotate or not
-var rotateSpeed = -10; // unit: seconds/360 degrees
-var imgWidth = 160; // width of images (unit: px)
+var rotateSpeed = -8; // unit: seconds/360 degrees
+var imgWidth = 150; // width of images (unit: px)
 var imgHeight = 220; // height of images (unit: px)
 
 // Link of background music - set 'null' if you dont want to play background music
