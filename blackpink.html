@@ -4,7 +4,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> kamlesh</title>
-    <link rel="stylesheet" href="./style.css">
 
 </head>
 <style>
@@ -167,10 +166,8 @@
         <div id="ground"></div>
     </div>
     <div id="music-container"></div>
-    <audio src="https://raw.githubusercontent.com/Kamleshlodhi1119/Smily/main/marne%20ki%20baat.mp3" autoplay="false"></audio>
-
     <audio id="myAudio">
-        <source src="https://raw.githubusercontent.com/Kamleshlodhi1119/Smily/main/marne%20ki%20baat.mp3" type="audio/mpeg"  >
+        <source src="https://raw.githubusercontent.com/Kamleshlodhi1119/Smily/main/marne%20ki%20baat.mp3" type="audio/mpeg" autoplay>
         Your browser does not support the audio element.
       </audio>
     <script>
@@ -181,8 +178,9 @@
         var imgHeight = 220; // height of images (unit: px)
 
         // Link of background music - set 'null' if you dont want to play background music
-      // var bgMusicURL = 'https://raw.githubusercontent.com/Kamleshlodhi1119/Smily/main/marne%20ki%20baat.mp3';
+        var bgMusicURL = 'https://raw.githubusercontent.com/Kamleshlodhi1119/Smily/main/marne%20ki%20baat.mp3';
         var bgMusicControls = true; // Show UI music control
+
 
 
 
@@ -241,7 +239,7 @@
         // add background music
         if (bgMusicURL) {
             document.getElementById('music-container').innerHTML += `
-    <audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
+    <audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''}  autoplay loop>    
     <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio> `;
         }
