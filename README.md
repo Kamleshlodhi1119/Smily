@@ -1,2 +1,2 @@
 # Smily
- this is  only for fun
+ this is  only for fun!
